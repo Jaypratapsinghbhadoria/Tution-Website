@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 180 100% 5%;
+    --foreground: 0 0% 100%;
+
+    --card: 180 100% 7.5%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 180 100% 7.5%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 180 50% 30%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 180 20% 40%;
+    --muted-foreground: 180 10% 60%;
+
+    --accent: 180 50% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 180 50% 15%;
+    --input: 180 50% 15%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-site-bg text-text-primary;
+  }
+}
+
+/* Custom font classes */
+.font-playfair {
+  font-family: var(--font-playfair), serif;
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.font-merriweather {
+  font-family: var(--font-merriweather), serif;
+}
+
